@@ -5,13 +5,13 @@ if [ -x /bin/zsh ]; then
     export PATH="${PATH}:${ZSH_PATH}"
   fi
 fi
-if [ -x /bin/zsh ]; then
+if [ -x /bin/bash ]; then
   export BASH_PATH=`bash -c 'source ~/.bashrc &> /dev/null ; echo $PATH'`
   if [ ! -z "$BASH_PATH" ]; then
     export PATH="${PATH}:${BASH_PATH}"
   fi
 fi
-  if [ -x /bin/zsh ]; then
+  if [ -x /bin/tcsh ]; then
   export TCSH_PATH=`tcsh -c 'source ~/.tcshrc &> /dev/null ; echo $PATH'`
   if [ ! -z "$TCSH_PATH" ]; then
     export PATH="${PATH}:${TCSH_PATH}"
